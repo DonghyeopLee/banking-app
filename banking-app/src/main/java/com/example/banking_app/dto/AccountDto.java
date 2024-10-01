@@ -4,11 +4,10 @@ import lombok.Data;
 import lombok.AllArgsConstructor;
 
 
-
-@Data
 @AllArgsConstructor
+@Data
 public class AccountDto {
-    private long id; 
+    private Long id; 
     private String accountHolderName;
     private double balance;
 
