@@ -22,7 +22,7 @@ public class AccountServiceImpl implements AccountService {
     @Override
     public AccountDto createAccount(AccountDto accountDto) {
         Account account = AccountMapper.mapToAccount(accountDto);
-        Account savedAccount = AccountRepository.save(account);
+        Account savedAccount = accountRepository.save(account);
        return AccountMapper.mapToAccountDto(savedAccount);
        
     }

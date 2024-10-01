@@ -8,9 +8,9 @@ import lombok.AllArgsConstructor;
 @Data
 @AllArgsConstructor
 public class AccountDto {
-    private Long id; 
-    private String accountHolderNumber;
-    private Double balance;
+    private long id; 
+    private String accountHolderName;
+    private double balance;
 
 
 }
