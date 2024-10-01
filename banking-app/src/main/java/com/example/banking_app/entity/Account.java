@@ -12,16 +12,14 @@ import lombok.NoArgsConstructor;
 @Getter
 @Entity
 @Table(name = "accounts")
-
-
 public class Account {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     @Column(name = "accountHolderName")
     private String accountHolderName;
-    private double balance;
+    private Double balance;
 
 }

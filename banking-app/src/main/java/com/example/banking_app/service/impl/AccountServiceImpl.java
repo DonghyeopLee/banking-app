@@ -3,6 +3,7 @@ package com.example.banking_app.service.impl;
 import java.util.List;
 import java.util.stream.Collectors;
 
+
 import org.springframework.stereotype.Service;
 import com.example.banking_app.dto.AccountDto;
 import com.example.banking_app.entity.Account;
@@ -17,10 +18,12 @@ public class AccountServiceImpl implements AccountService {
 
 
     public AccountServiceImpl(AccountRepository accountRepository) {
+
         this.accountRepository = accountRepository;
     }
     @Override
     public AccountDto createAccount(AccountDto accountDto) {
+
         Account account = AccountMapper.mapToAccount(accountDto);
         Account savedAccount = accountRepository.save(account);
        return AccountMapper.mapToAccountDto(savedAccount);
