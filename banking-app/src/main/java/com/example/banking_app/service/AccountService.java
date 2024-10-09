@@ -9,5 +9,11 @@ public interface AccountService {
 
     AccountDto getAccountById(Long id);
 
+    AccountDto deleteAccountById(Long id);
+
     List<AccountDto> getAllAccounts();
+
+
+
+
 }
